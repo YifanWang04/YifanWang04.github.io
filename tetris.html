@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tetris Game</title>
+</head>
+<body>
+    <div id="pauseOverlay">Game Paused</div> 
+    <div id="gameOverOverlay">Game Over - Click to Restart</div>               
+    <div class="title">
+        <h1>Tetris</h1>
+    </div>
+    <div class="container">
+        <audio id="myAudio" src="./uploads/Tetris Background Music.mp3" preload="auto" autoplay loop></audio>
+        <div id="tetris">
+            <canvas id="tetrisCanvas" width="300" height="600"></canvas>
+        </div>
+        <div id="infoPanel" class="panel"> 
+            <button id="musicBtn">Play / Pause Music</button>
+            <div>
+                <h2>Score</h2>
+                <div id="score">0</div>
+                <h2>Next Block</h2>
+                <canvas id="nextBlock" width="130" height="120"></canvas>
+            </div>
+            <div>
+                <h2>Key Instructions</h2>
+                <ul>
+                    <li>←: Move Left</li>
+                    <li>→: Move Right</li>
+                    <li>↓: Speed Up</li>
+                    <li>↑: Rotate Block</li>
+                    <li>ESC: Pause Game</li>
+                    <li>Enter: Restart Game</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/tetris.js"></script>
+</body>
+</html>

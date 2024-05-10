@@ -1,0 +1,118 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: 'Times New Roman', sans-serif;
+  background-image: url(../uploads/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 54px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 20px 0;
+}
+
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+li {
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.panel {
+  width: 250px;
+  background-color: #afbeff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#pauseOverlay, #gameOverOverlay {
+  display: none; 
+  position: fixed; 
+  top: 0; left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 24px;
+}
+
+#tetrisCanvas, #nextBlock {
+  border: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#infoPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#score {
+  font-size: 24px; 
+  margin-bottom: 15px; 
+}
+
+
+#Tetromino {
+  background-color: rgb(165, 177, 228);
+}
+
+#musicBtn {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgb(165, 177, 228);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#musicBtn:hover {
+  background-color: rgb(148, 160, 216);
+}
+
+#musicBtn:active {
+  background-color: #afbeff;
+  transform: translateY(2px);
+}
